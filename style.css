@@ -1,0 +1,35 @@
+button{
+    background-color: rgb(11, 175, 134 ) !important;
+    padding: 15px;
+    color: #fff;
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: limegreen;
+    position: relative;
+    padding: 15px;
+}
+.box::after{
+    content: attr(data-number);
+   font-size: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    width: fit-content;
+    height: 40px;
+    display: block;  
+}
+/* .box:nth-child(1)::after{
+    content: '1';
+}
+.box:nth-child(2)::after{
+    content: '2';
+}
+.box:nth-child(3)::after{
+    content: '3';
+} */
