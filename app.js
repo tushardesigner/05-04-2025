@@ -26,12 +26,24 @@
 //     });
 // })
 
+// jQuery(document).ready(function(){
+//     $("#form-btn").click(function(e){
+//         e.preventDefault()
+//        let value =  $(".form-input").val();
+//        console.log(value)
+//        $(".result").prepend(`<li>${value}</li>`);
+//        $(".form-input").val('')
+//     })
+// })
+
 jQuery(document).ready(function(){
-    $("#form-btn").click(function(e){
-        e.preventDefault()
-       let value =  $(".form-input").val();
-       console.log(value)
-       $(".result").prepend(`<li>${value}</li>`);
-       $(".form-input").val('')
+    $(".btn").click(function(){
+        $(".pink-box").remove();
+    })
+})
+
+jQuery(document).ready(function(){
+    $(".btn2").click(function(){
+        $(".heading").addClass("heading-two")
     })
 })

@@ -33,3 +33,16 @@ button{
 .box:nth-child(3)::after{
     content: '3';
 } */
+
+.pink-box{
+    padding: 15px;
+    background-color: pink;
+    color: black;
+}
+.pink-box p{
+    margin: 0;
+}
+.heading.heading-two{
+    color: red;
+    font-size: 30px;
+}
